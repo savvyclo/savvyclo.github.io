@@ -1,0 +1,37 @@
+body {
+    /* background: linear-gradient(to right, rgb(15, 32, 39), rgb(52, 121, 105), rgb(15, 32, 39)); */
+    /* background: linear-gradient(to right, rgb(15, 32, 39), rgb(52 209 173), rgb(15, 32, 39)); */
+    background: linear-gradient(to right, #0f0f0f, #434343);
+    overflow: hidden;
+}
+
+.Info_holder {
+    transition: 0.5s;
+    margin: auto;
+    display: block;
+    width: 950px;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 15px;
+    /* border: 1px solid white; */
+    padding: 15px;
+    animation: slide-in-fade-in 0.5s forwards;
+}
+
+.info_owners {
+    text-align: center;
+    color: white;
+    font-family: "Oswald", sans-serif;
+}
+
+@keyframes slide-in-fade-in {
+    from {
+        transform: translateY(-5%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

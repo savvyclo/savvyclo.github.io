@@ -1,0 +1,208 @@
+body {
+    background: linear-gradient(to right, #0f0f0f, #434343);
+    overflow: hidden;
+}
+
+img {
+    margin: auto;
+    display: block;
+    width: 550px;
+    height: 550px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    animation: heartbeat 10s infinite;
+}
+
+.startbuttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.startbuttons button {
+    position: absolute;
+    font-family: "Oswald", sans-serif;
+    transition: 0.5s;
+    padding: 10px 20px;
+    font-size: xx-large;
+    width: 250px;
+    height: 100px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    background: rgba(0, 0, 0, 0.432);
+    color: white;
+    bottom: 5.5%
+}
+
+.startbuttons button:hover {
+    transition: 0.5s;
+    border: 1px solid transparent;
+    color: rgb(78, 196, 151);
+    cursor: pointer;
+    scale: 1.3;
+    bottom: 7.3%;
+}
+
+.newsdiv {
+    transition: 0.5s;
+    margin: auto;
+    display: block;
+    width: 900px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 15px;
+    border: 1px solid transparent;
+    padding: 15px;
+    animation: slide-in-fade-in2 0.5s forwards;
+}
+
+
+@keyframes slide-in-fade-in2 {
+    from {
+        transform: translateY(25%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.newsdiv:hover {
+    transition: 0.5s;
+    border: 1px solid transparent;
+}
+
+.news {
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    font-family: "Oswald", sans-serif;
+    color: white;
+    width: 900px;
+    height: 100%;
+    /* Sørger for, at containeren dækker hele højden */
+    position: relative;
+    /* Tilføjer positionering for at placere teksterne */
+    padding: 5px;
+    scale: 0.9;
+    animation: 1s fade-in forwards;
+    /* animation: heartbeat 15s infinite; */
+}
+
+/* /* .text-container {
+    position: absolute;
+    Placerer alle teksterne ovenpå hinanden
+width: 100%;
+height: 100%;
+overflow: hidden;
+/* Sikrer, at teksten ikke går uden for containeren */
+/* } */
+
+*/ .text-container h1 {
+    position: absolute;
+    /* Sørger for, at alle teksterne overlapper hinanden */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    padding: 5px;
+}
+
+@keyframes slide-in-fade-in {
+    from {
+        transform: translateX(-25%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-fade-in1 {
+    from {
+        transform: translateX(15%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    75% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes text-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    30% {
+        opacity: 0.5;
+        transform: translateY(0);
+    }
+
+    /* 39% {
+        opacity: 0;
+        transform: translateY(0%);
+    } */
+
+    60% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
