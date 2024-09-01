@@ -41,7 +41,8 @@ img {
 .startbuttons button:hover {
     transition: 0.5s;
     border: 1px solid transparent;
-    color: rgb(78, 196, 151);
+    /* color: rgb(78, 196, 151); */
+    color: transparent;
     cursor: pointer;
     scale: 1.3;
     bottom: 7.3%;
