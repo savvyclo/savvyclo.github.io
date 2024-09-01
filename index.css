@@ -10,6 +10,15 @@ img {
     height: 550px;
 }
 
+.navBar {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.432);
+    width: 1920px;
+    height: 70px;
+    top: 0%;
+    left: 0%;
+}
+
 .image {
     display: flex;
     justify-content: center;
