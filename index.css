@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300 1,400;1,500;1,700;1,900&display=swap");
+
 body {
     background: linear-gradient(to right, #0f0f0f, #434343);
     overflow: hidden;
@@ -17,6 +19,29 @@ img {
     height: 70px;
     top: 0%;
     left: 0%;
+
+}
+
+.navBar button {
+    transition: 0.5s;
+    position: absolute;
+    background-color: rgba(50, 50, 50);
+    color: white;
+    width: 150px;
+    height: 35px;
+    top: 20%;
+    border: 2px solid rgba(25, 25, 25);
+    border-radius: 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: larger;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),0 0 20px rgba(255, 255, 255, 0.6),0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+.navBar button:hover {
+    transition: 0.5s;
+    background-color: rgba(100, 100, 100);
+    cursor: pointer;
 }
 
 .image {
@@ -25,11 +50,31 @@ img {
     animation: heartbeat 10s infinite;
 }
 
+.SavvyLogo {
+    transform: scale(1.5);
+    filter: blur(10px);
+    animation: zoomBlur 2s forwards;
+}
+
+@keyframes zoomBlur {
+    0% {
+        transform: scale(1.5);
+        filter: blur(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
 .startbuttons {
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
+
 
 .startbuttons button {
     position: absolute;
