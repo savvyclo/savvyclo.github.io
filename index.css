@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nerko+One&display=swap");
+
 body {
     /* background: linear-gradient(90deg, #1D976C 0%, #93F9B9 100%);
     background: linear-gradient(90deg, #122526 0%, #303234 100%); */
@@ -23,9 +25,21 @@ body {
 
     /* border: 2px solid rgb(0,0,0,0.350); */
     border-radius: 15px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: x-large;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 55px;
+    text-decoration: hidden;
   }
 
-  #header-buttons button {
+  #header-buttons a {
+    color: white;
+    text-decoration: none;
+}
+
+
+  #header-buttons a {
     border: 2px solid transparent;
     margin: 5px;
     width: 100px;
@@ -35,8 +49,10 @@ body {
     font-size: larger;
   }
 
-  #header-buttons button:hover {
+  #header-buttons a:hover {
+    transition: 0.5s;
     background-color: rgb(0,0,0,0.150);
+    color: rgba(13,221,173);
     /* background: linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%); */
    /* border-color: transparent; */
     cursor: pointer;
