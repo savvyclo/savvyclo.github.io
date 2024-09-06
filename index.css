@@ -16,10 +16,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(0, 0, 0, 0.250);
+    background-color: rgb(0, 0, 0, 0.450);
     /* background: linear-gradient(90deg, rgba(72,64,193,0.500) 0%, rgba(13,221,173,0.500) 35%, rgba(0,212,255,0.500) 100%); */
-    background: linear-gradient(90deg, #232526 0%, #414345 100%);
-    /* border: 2px solid rgb(0,0,0,0.150); */
+    /* background: linear-gradient(90deg, #232526 0%, #414345 100%); */
+    border: 2px solid rgb(0,0,0,0.150);
 
     /* border: 2px solid rgb(0,0,0,0.350); */
     border-radius: 15px;
@@ -30,7 +30,7 @@ body {
     margin: 5px;
     width: 100px;
     height: 50px;
-    background-color: rgb(0,0,0,0.250);
+    background-color: rgb(0,0,0,0.500);
     color: white;
     font-size: larger;
   }
@@ -42,11 +42,15 @@ body {
     cursor: pointer;
 }
 
-.Savvy {
-    float: left;
-    width: 75px;
-    height: 75px;
-}
+.SavvyImg {
+    display: flex;
+    justify-content: center;
+  }
+
+  .SavvyImg img {
+    animation: zoomBlur 1s forwards;
+    width: 30%;
+  }
 
 
 
