@@ -3,28 +3,40 @@
 body {
     /* background: linear-gradient(90deg, #1D976C 0%, #93F9B9 100%);
     background: linear-gradient(90deg, #122526 0%, #303234 100%); */
-    background: linear-gradient(90deg, #232526 0%, #414345 100%);
+    /* background: linear-gradient(90deg, #232526 0%, #414345 100%); */
+    background-color: #111927;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
     overflow: hidden;
+    margin: 0;
+}
+
+
+@keyframes fadeOut {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }
 
 #header-buttons {
     text-align: center;
-    animation: zoomBlur 1s forwards;
-    /* margin-right: 35px; */
+    animation: fadeOut 0.5s ease 0s 1 normal forwards;
     float: middle;
     height: 68px;
     width: auto;
-    /* border: 1px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(0, 0, 0, 0.450);
-    /* background: linear-gradient(90deg, rgba(72,64,193,0.500) 0%, rgba(13,221,173,0.500) 35%, rgba(0,212,255,0.500) 100%); */
-    /* background: linear-gradient(90deg, #232526 0%, #414345 100%); */
-    border: 2px solid rgb(0,0,0,0.150);
-
-    /* border: 2px solid rgb(0,0,0,0.350); */
-    border-radius: 15px;
+    backdrop-filter: blur(11px) saturate(151%);
+    -webkit-backdrop-filter: blur(11px) saturate(151%);
+    background-color: rgba(17, 25, 40, 0.35);
+    /* border-radius: 12px; */
+    border: 1px solid rgba(255, 255, 255, 0.125);
     font-family: "Bebas Neue", sans-serif;
     font-size: x-large;
     text-align: center;
@@ -40,24 +52,22 @@ body {
 
 
   #header-buttons a {
-    /* transition: 0.5s; */
+    transition: 0.5s;
     border: 2px solid transparent;
+    text-shadow: -1px -1px 8px #000000;
     margin: 5px;
     width: 100px;
     height: 50px;
-    background-color: rgb(0,0,0,0.500);
+    background-color: hsl(162, 89%, 32%);
     color: white;
     font-size: larger;
+    border-radius: 10px;
   }
 
   #header-buttons a:hover {
-    /* transition: 0.5s; */
-    background-color: rgb(0,0,0,0.150);
-    color: rgba(227, 186, 143);
-    /* background: linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%); */
-   /* border-color: transparent; */
+    transition: 0.5s;
+
     cursor: pointer;
-    filter: blur(0.10rem);
 }
 
 .SavvyImg {
